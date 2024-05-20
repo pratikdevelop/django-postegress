@@ -21,7 +21,7 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/auth/', include("users.urls")),
-    #  path("auth/", include("djoser.urls")),
+     path("", include("chatapp.urls")),
     # path("auth/", include("djoser.urls.jwt")),
     # path("auth/logout/", LogoutView.as_view()),
 ]
